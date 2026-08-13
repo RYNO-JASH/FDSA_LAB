@@ -28,7 +28,6 @@ int binaryFindBookCode(vector<int> &arr, int n, int key)
 
 int recursivebinaryFindBookCode(vector<int> &arr, int low, int high, int key)
 {
-    // No elements left
     if (low > high)
         return -1;
 
@@ -59,8 +58,6 @@ int main()
     {
         cin >> arr[i];
     }
-
-    // Binary Search requires sorted array
     sort(arr.begin(), arr.end());
 
     cout << "Sorted Book Codes : ";
